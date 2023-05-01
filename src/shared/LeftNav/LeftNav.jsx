@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Editor from '../Editor/Editor';
 
 const LeftNav = () => {
     const [categories, setCategories] = useState([]);
@@ -21,6 +22,7 @@ const LeftNav = () => {
                     </p>)
                 }
             </div>
+            <Editor></Editor>
         </div>
     );
 };
